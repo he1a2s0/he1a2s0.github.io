@@ -14,7 +14,7 @@ enableToc: true
 # Comment
 comment:
     # livere: MTAyMC81MDk5NC8yNzQ3Ng  # https://www.livere.com
-    disqus: 
+    disqus: he1a2s0
     # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
@@ -31,12 +31,12 @@ social:
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
 baidu:
-    id:   
+    id: 5b4ddcd39dee186e9d1f61ea64079221
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
 ga:
-    id:  
+    id: UA-15980316 
     host: auto  
 
 
