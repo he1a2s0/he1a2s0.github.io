@@ -8,3 +8,7 @@
   margin-bottom: 20px;
   border-left: 3px solid #1874CD; 
 }
+
+.post-header>hr{
+  border-bottom: 1px solid #DDDDDD;
+}
