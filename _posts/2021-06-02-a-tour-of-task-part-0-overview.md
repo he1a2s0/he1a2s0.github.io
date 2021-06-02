@@ -42,3 +42,8 @@ post_description: Task 类的历史和分类，译自：https://blog.stephenclea
 TPL中，大部分任务是 Delegate Tasks（带有对 Promise Task 的一些支持）。当代码进行并行处理时，各种 Delegate Task 被拆分到不同的线程，然后实际上由这些线程来执行这些 Delegate Tasks 中的代码。在 async 环境中，大部分 task 是 Promise Tasks（带有对 Delegate Task 的部分支持）。 代码在 Promise Task 上执行 await 时，[没有绑定的线程](https://blog.stephencleary.com/2013/11/there-is-no-thread.html){:target="_blank"}来等待那个任务完成。
 
 以前，我曾使用“基于代码的Task”和“基于事件的Task”两个术语来描述这两种类型的任务。在这个系列中，我将尝试使用 "Delegate Task" 和 "Promise Task" 来区分它们。
+
+
+----
+
+原文链接：<a href ="https://blog.stephencleary.com/2014/04/a-tour-of-task-part-0-overview.html" target="_blank">https://blog.stephencleary.com/2014/04/a-tour-of-task-part-0-overview.html</>
