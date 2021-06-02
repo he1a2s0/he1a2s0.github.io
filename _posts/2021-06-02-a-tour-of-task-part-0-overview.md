@@ -46,4 +46,4 @@ TPL中，大部分任务是 Delegate Tasks（带有对 Promise Task 的一些支
 
 ----
 
-原文链接：<a href ="https://blog.stephencleary.com/2014/04/a-tour-of-task-part-0-overview.html" target="_blank">https://blog.stephencleary.com/2014/04/a-tour-of-task-part-0-overview.html</>
+原文链接：<a href ="https://blog.stephencleary.com/2014/04/a-tour-of-task-part-0-overview.html" target="_blank">https://blog.stephencleary.com/2014/04/a-tour-of-task-part-0-overview.html</a>
