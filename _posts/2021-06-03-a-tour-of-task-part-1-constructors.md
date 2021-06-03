@@ -8,7 +8,8 @@ categories: [c#, .net]
 post_description: Task 类的构造函数，译自：https://blog.stephencleary.com/2014/05/a-tour-of-task-part-1-constructors.html
 ---
 
-## 太长不看版：不要使用 Task 或 Task<T> 的构造函数
+## 太长不看版：不要使用 `Task/Task<T>` 的构造函数
+
 - `new Task/Task<T>(..)` 创建的任务处于 `Created` 状态（任务状态将在 Part 3 中详述），需要手动调度。
 - 绝大部分情况下，对数据并行和静态任务并行应使用 `Parallel` 类和 PLINQ；对动态任务并行应使用 `Task.Run` 或 `Task.Factory.StartNew`
 
