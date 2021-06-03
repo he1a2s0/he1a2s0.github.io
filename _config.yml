@@ -7,6 +7,7 @@ avatarTitle: he1a2s0
 # 头像里面的描述
 avatarDesc: developer
 url: "https://he1a2s0.github.io"
+author: he1a2s0
 
 # 博客是否自动生成目录，false为不生成
 enableToc: true
@@ -35,10 +36,7 @@ baidu:
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
-ga:
-    id: UA-15980316 
-    host: auto  
-
+google_analytics: G-9MLE0822NH
 
 # 《----------------- 上面的信息修改成你自己的 ---------------------------》
 #
