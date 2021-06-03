@@ -150,8 +150,8 @@ p {
   margin-bottom: 10px;
   margin-top: 5px;
   line-height: 1.7em; 
-  padding-left: 20px;
   font-size: 16px;
+  text-indent: 2em;
 }
 
 strong {
@@ -161,11 +161,11 @@ em {
   font-style: italic; }
 
 blockquote {
-  padding-top: 10px;
+  padding-top: 1px;
   padding-bottom: 1px;
-  padding-left: 10px;
+  padding-left: 5px;
   margin-left: 20px;
-
+  margin-bottom:5px;
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: lighter;
   font-size: 1em;

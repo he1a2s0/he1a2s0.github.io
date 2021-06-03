@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task之旅：part 0
+title: Task之旅 - Part 0：概述
 date: 2021-06-02
 comment: true
 tags: [c#, Task, 异步]
@@ -24,7 +24,7 @@ post_description: Task 类的历史和分类，译自：https://blog.stephenclea
 - 从 Task 和 TPL 被引入到 .NET 4.0 之后就使用过它的开发者。这些开发者熟悉 Task 以及 [它是如何在并行处理中使用的](https://msdn.microsoft.com/en-us/library/ff963553.aspx){:target="_blank"}。这些开发者面临的危险是 **(TPL 使用的）Task 几乎完全不同于（async 使用的）Task**
 - 在 async 出来前从未听过 Task 的开发者。对他们来说，Task 只是 async 的一部分 -- 另一个需要学习的（相当复杂的）东西。“Continuation”是一个外来词. 这些开发者面临的危险是 **假设 Task 的每个成员都是适用于 async 编程的，而实际上并非如此**。
 
-	Continuation 借用自旧法语，来源于拉丁文 continuātiō.
+> Continuation 借用自旧法语，来源于拉丁文 continuātiō.
 
 微软的 async 小组确实考虑编写他们自己的 "**Future**" 类型来表示异步操作，但 Task 类型太有诱惑力了。 事实上，甚至在 .NET 4.0 Task 就支持 promise 风格的 futures（有点尴尬），要让它完全支持 async 也只需要少量的扩展。而且，通过合并 "Future" 和 已有的 Task 类型，我们达成了很好的统一：在后台线程上开始一些操作并异步地处理它是非常容易的。无需从 Task 转换为 Future.
 
@@ -36,8 +36,9 @@ post_description: Task 类的历史和分类，译自：https://blog.stephenclea
 
 有两种类型的 Task。第一种是 Delegate Task（委托型Task），是有代码要运行的任务。第二种是 Promise Task（承诺型Task），是一种表示某些类型的事件或信号的任务。 Promise Tasks 通常是基于 I/O 的信号（比如，“HTTP下载已完成”），但事实上它们可以表示任何东西（比如，“10秒的计时器已到期”）
 
-	1.Promise 与 ES 中 Promise 含义类似，翻译时应当作特有名词不翻译，这里为了与前面委托型Task对应，将其译为“承诺”	
-	2.原文的评论中有人提到 Task 对应 Future，TaskCompletionSource 对应 Promise（即表示第二种类型的 Task 命名不妥），作者回复表示同意，但也说明这两个术语是来源于官方 Task 源码，Promise Task 意指 “来源于 Promise 的 Task”
+> Promise 与 ES 中 Promise 含义类似，翻译时应当作特有名词不翻译，这里为了与前面委托型Task对应，将其译为“承诺”	
+
+> 原文的评论中有人提到 Task 对应 Future，TaskCompletionSource 对应 Promise（即表示第二种类型的 Task 命名不妥），作者回复表示同意，但也说明这两个术语是来源于官方 Task 源码，Promise Task 意指 “来源于 Promise 的 Task”
 
 TPL中，大部分任务是 Delegate Tasks（带有对 Promise Task 的一些支持）。当代码进行并行处理时，各种 Delegate Task 被拆分到不同的线程，然后实际上由这些线程来执行这些 Delegate Tasks 中的代码。在 async 环境中，大部分 task 是 Promise Tasks（带有对 Delegate Task 的部分支持）。 代码在 Promise Task 上执行 await 时，[没有绑定的线程](https://blog.stephencleary.com/2013/11/there-is-no-thread.html){:target="_blank"}来等待那个任务完成。
 
