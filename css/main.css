@@ -63,7 +63,7 @@ html {
 
 body {
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   -webkit-font-smoothing: antialiased; }
 
@@ -150,7 +150,7 @@ p {
   margin-bottom: 10px;
   margin-top: 5px;
   line-height: 1.7em; 
-  font-size: 16px;
+  font-size: 1em;
   text-indent: 2em;
 }
 
@@ -186,7 +186,7 @@ ol {
 
 ul {
   list-style-type: disc; }
-
+ol li p, ul li p {text-indent: 0; font-size:1em;}
 code {
   color: #000000;
   padding: .1em .4em;

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Task之旅 - Part 2：AsyncState 和 CreationOptions 属性
-date: 2021-06-03
+date: 2021-06-04
 comment: true
 tags: [c#, Task, 异步]
-categories: [c#, .net]
+categories: [.net, Task之旅系列]
 post_description: Task 类的 AsyncState 和 CreationOptions 属性，译自：https://blog.stephencleary.com/2014/05/a-tour-of-task-part-2-asyncstate-and-creationoptions.html
 ---
 

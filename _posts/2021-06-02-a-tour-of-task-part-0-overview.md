@@ -4,7 +4,7 @@ title: Task之旅 - Part 0：概述
 date: 2021-06-02
 comment: true
 tags: [c#, Task, 异步]
-categories: [c#, .net]
+categories: [.net, Task之旅系列]
 post_description: Task 类的历史和分类，译自：https://blog.stephencleary.com/2014/04/a-tour-of-task-part-0-overview.html
 ---
 

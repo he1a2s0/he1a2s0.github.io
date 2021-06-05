@@ -4,7 +4,7 @@ title: Task之旅 - Part 1：构造函数
 date: 2021-06-03
 comment: true
 tags: [c#, Task, 异步]
-categories: [c#, .net]
+categories: [.net, Task之旅系列]
 post_description: Task 类的构造函数，译自：https://blog.stephencleary.com/2014/05/a-tour-of-task-part-1-constructors.html
 ---
 

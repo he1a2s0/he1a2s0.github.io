@@ -19,7 +19,7 @@ layout: default
     </div>
   </header>
 
-  {% if site.enableToc %}
+  {% if site.enableToc and page.disableToc != true %}
     <h2 class="post-title">目录</h2>
     {% include toc.html html=content %}
   {% endif %}
