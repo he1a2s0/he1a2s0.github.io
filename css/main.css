@@ -218,9 +218,8 @@ pre code {
 table {
   color: #333333;
   font-size: .9em;
-  text-align: center;
   line-height: 40px;
-  border: 2px solid #363636;
+  border: 1px solid #cccccc;
   width: 90%;
   margin: 50px auto; }
 
@@ -228,27 +227,27 @@ thead tr:first-child {
   background-color: #E0EEEE;
   color: #363636;
   text-align: center;
-  border: 1px solid #363636;
+  border: 1px solid #999999;
 }
 th {
   font-weight: bold; 
-  border: 1px solid #363636;
+  border: 1px solid #999999;
 }
 table thead tr th {
   text-align: center;
 }
 
-th:first-child, td:first-child {
+th:first-child, td {
   padding: 0 15px 0 20px; 
 }
 
 tbody td {
   font-size: .85em; 
-  border: 1px solid #363636;
+  border: 1px solid #cccccc;
 }
 td:last-child {
   padding-right: 10px; 
-  border: 1px solid #363636;
+  border: 1px solid #cccccc;
 }
 
 /*pager start----------------*/
