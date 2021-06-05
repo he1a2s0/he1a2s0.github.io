@@ -3,7 +3,7 @@ layout: post
 title: Task之旅 - Part 3：Status
 date: 2021-06-05
 comment: true
-tags: [c#, Task, 异步]
+tags: [c#, Task, 异步, Task之旅系列]
 categories: [.net, Task之旅系列]
 post_description: Task 类的 Status 属性和状态转换，译自：https://blog.stephencleary.com/2014/06/a-tour-of-task-part-3-status.html
 ---
