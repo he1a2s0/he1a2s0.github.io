@@ -398,7 +398,7 @@ img::-moz-selection {
 
   .content-wrapper {
     z-index: 800;
-    width: 60%;
+    width: 75%;
     margin-left: 23%; }
 
   .content-wrapper__inner {
