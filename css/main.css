@@ -398,9 +398,12 @@ img::-moz-selection {
 
   .content-wrapper {
     z-index: 800;
+    width: 60%;
+    margin-left: 23%; 
+  }
+  .content-wrapper-wide{
     width: 75%;
-    margin-left: 23%; }
-
+  }
   .content-wrapper__inner {
     /*margin: 0 10%;*/
     margin-right: 40px;
@@ -411,7 +414,7 @@ img::-moz-selection {
   }
   .post-toc-container{
     position:fixed;
-    margin-left:60%;
+    margin-left:57%;
   }
 
   .footer {
